@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-14T06:54:17.405Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="uhuEA4a1sd6B9-jNNu0i" version="21.4.0" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-10-25T08:29:51.730Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="it6UHIyqBFhSB1nwCJKO" version="21.4.0" type="github" pages="6">
   <diagram name="推荐整体流程" id="ISYWLAkCxyc74e-Y4_dA">
     <mxGraphModel dx="2526" dy="1180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -557,6 +557,47 @@
         </mxCell>
         <mxCell id="YlzaIsx-XoMdOeW_qGun-35" value="召回结果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="SjWBEG2yEpZAVUKU5zYd-1">
           <mxGeometry x="1018.96" y="1630" width="160" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="召回 的副本" id="clf2GHW7zhxNxFXj6-nh">
+    <mxGraphModel dx="2526" dy="1180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="JJ2q1EytZ8dn_xyw1fMu-0" />
+        <mxCell id="JJ2q1EytZ8dn_xyw1fMu-1" parent="JJ2q1EytZ8dn_xyw1fMu-0" />
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" edge="1" parent="JJ2q1EytZ8dn_xyw1fMu-1" source="JJ2q1EytZ8dn_xyw1fMu-13" target="6vv8w1arwvkYcJ7JsDf1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JJ2q1EytZ8dn_xyw1fMu-13" value="冷启召回" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="JJ2q1EytZ8dn_xyw1fMu-1">
+          <mxGeometry x="840" y="1630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="JJ2q1EytZ8dn_xyw1fMu-1" source="JJ2q1EytZ8dn_xyw1fMu-29" target="6vv8w1arwvkYcJ7JsDf1-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JJ2q1EytZ8dn_xyw1fMu-29" value="召回结果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="JJ2q1EytZ8dn_xyw1fMu-1">
+          <mxGeometry x="1018.96" y="1630" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="JJ2q1EytZ8dn_xyw1fMu-1" source="6vv8w1arwvkYcJ7JsDf1-0" target="6vv8w1arwvkYcJ7JsDf1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-0" value="从redis拉取特征" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="JJ2q1EytZ8dn_xyw1fMu-1">
+          <mxGeometry x="1018.96" y="1520" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="JJ2q1EytZ8dn_xyw1fMu-1" source="6vv8w1arwvkYcJ7JsDf1-2" target="6vv8w1arwvkYcJ7JsDf1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-2" value="构造请求，访问实时预测服务" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="JJ2q1EytZ8dn_xyw1fMu-1">
+          <mxGeometry x="1018.96" y="1420" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="JJ2q1EytZ8dn_xyw1fMu-1" source="6vv8w1arwvkYcJ7JsDf1-5" target="6vv8w1arwvkYcJ7JsDf1-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-5" value="重排" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="JJ2q1EytZ8dn_xyw1fMu-1">
+          <mxGeometry x="1018.96" y="1320" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6vv8w1arwvkYcJ7JsDf1-9" value="推荐结果写redis，并返回" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="JJ2q1EytZ8dn_xyw1fMu-1">
+          <mxGeometry x="1018.96" y="1220" width="160" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
